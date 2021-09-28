@@ -21,6 +21,18 @@ function getAPI () {
   body.appendChild(img)
 }
 
+const sectionPlanets = document.querySelector('.section-planets');
+sectionPlanets.addEventListener('click', selectPlanet);
+
+function selectPlanet(event) {
+  const parent = event.target.parentNode;
+  const planet = parent.className.split(' ')[1];
+  whatSearch = planet;
+  getAPI();
+}
+
 window.onload = () => {
   searchImage();
 }
+
+module.exports = { sectionPlanet, searchImage, getApi, selectPlanet };
