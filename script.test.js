@@ -1,0 +1,1 @@
+const nasa = require('./script');
