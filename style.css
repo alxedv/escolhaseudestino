@@ -5,6 +5,11 @@
   color: white;
 }
 
+body {
+  background-image: linear-gradient(45deg,#20115b, #010108);
+
+}
+
 header {
   display: flex;
   align-items: center;
@@ -12,6 +17,8 @@ header {
   width: 100%;
   height: 80px;
   background-image: linear-gradient(45deg, #010108, #20115b);
+  border-radius: 30px ;
+  border: 2px solid whitesmoke;
 }
 
 header .title-logo {
@@ -29,7 +36,14 @@ header .title-logo .title {
 }
 
 header .about-us {
-  padding: 0px 25px;
+  padding: 0px 40px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+header .about-us:hover {
+  font-size: 1.04em;
+  cursor: pointer;
 }
 
 main {
@@ -37,9 +51,10 @@ main {
   padding: 20px;
   align-items: center;
   margin-top: 10px;
-  border: 1px solid black;
+  border-radius: 30px;
   width: 100%;
   height: 400px;
+  border: 2px solid whitesmoke;
   background-image: linear-gradient(45deg, #010108, #20115b);
 }
 
@@ -87,7 +102,41 @@ main {
   width: 100%;
   align-items: center;
   justify-content: space-between;
+}
+
+.section-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 800px;
+  margin-top: 20px;
+  border-radius: 30px;
+  border: 2px solid whitesmoke;
   background-image: linear-gradient(45deg, #010108, #20115b);
 }
 
-.invert { filter: invert(100%); }
+.section-about .planet-name {
+  font-weight: 600;
+  font-size: 60px;
+}
+
+.section-about .planet-description {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.images {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.images div {
+  margin-bottom: 30px;
+  width: 400px;
+  height: 300px;
+  border: 1px solid whitesmoke;
+}
