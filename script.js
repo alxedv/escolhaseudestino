@@ -87,5 +87,5 @@ window.onload = () => {
   });
 }
 
-// module.exports = { cleanImages, getInfo, isPlanet, isNotPlanet,
-  // getAPI, selectPlanet,  searchImage };
+module.exports = { cleanImages, getInfo, isPlanet,
+  getAPI, selectPlanet,  searchImage };
