@@ -1,0 +1,23 @@
+{
+  "name": "Projeto-NASA-API",
+  "version": "1.0.0",
+  "description": "Este repositório tem como objetivo a implementação de uma API da NASA em um WebSite desenvolvido por estudantes da Trybe.",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alxedv/Projeto-NASA-API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alxedv/Projeto-NASA-API/issues"
+  },
+  "homepage": "https://github.com/alxedv/Projeto-NASA-API#readme",
+  "devDependencies": {
+    "jest": "24.9.0"
+  }
+}
