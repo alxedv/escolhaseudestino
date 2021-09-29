@@ -60,9 +60,14 @@ function messageLoading(message) {
 function getAPI(myFunction) {
   cleanImages();
   messageLoading('loading...');
-  fetch(`${url}${whatSearch}, image of ${whatSearch}, picture of ${whatSearch}`)
-  .then((response) => response.json())
-  .then((element) => myFunction(element));
+  try {
+    return fetch(`${url}${whatSearch}, image of ${whatSearch}, picture of ${whatSearch}`)
+      .then((response) => response.json())
+      .then((element) => myFunction(element));
+  } catch (err) {
+    console.log(err);
+    alert('[ERROR SYSTEM] - Falha no carregamento da API - Momentaneamente o seu foguete está impedido de decolar!');
+  }
 }
 
 function selectPlanet(event) {
@@ -87,5 +92,5 @@ window.onload = () => {
   });
 }
 
-module.exports = { cleanImages, getInfo, isPlanet,
-  getAPI, selectPlanet,  searchImage };
+// module.exports = { cleanImages, getInfo, isPlanet, isNotPlanet,
+//   getAPI, selectPlanet,  searchImage };

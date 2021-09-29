@@ -151,6 +151,10 @@ main {
   font-weight: 400;
 }
 
+.loading {
+  text-align: center;
+}
+
 .images {
   display: flex;
   width: 100%;
@@ -201,7 +205,7 @@ main {
 
 .description-about-us {
   text-align: center;
-  width: fit-content;
+  width: 85%;
   font-size: 20px;
   margin-bottom: 40px;
 }
@@ -253,13 +257,38 @@ main {
 .credit-items {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .credit-items div {
   text-align: center;
   font-size: 14px;
   width: fit-content;
+}
 
+.title-credits {
+  margin-top: 5px;
+}
+
+.credits-music {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.astronaut {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.function {
+  font-weight: 600;
+  font-size: 17px;
+  margin: 0;
 }
 
 @keyframes transitionIn {
