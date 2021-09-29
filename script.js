@@ -30,8 +30,13 @@ function getAPI () {
   const img = document.createElement('img');
   fetch(`${url}${whatSearch}`)
   .then((response) => response.json())
-  .then((element) => img.src = element.collection.items[0].links[0].href);
-  body.appendChild(img)
+  .then((element) => {
+    img.src = element.collection.items[0].links[0].href
+    return img.src;
+  });
+  body.appendChild(img);
+  // const teste = img.src
+  // console.log(teste);
 }
 
 function selectPlanet(event) {
@@ -43,7 +48,7 @@ function selectPlanet(event) {
 
 window.onload = () => {
   searchImage();
-  console.log(sistemaSolar);
+  // console.log(sistemaSolar);
 }
 
-module.exports = { sectionPlanet, searchImage, getApi, selectPlanet };
+// module.exports = { searchImage, getAPI, selectPlanet };
